@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*flex練習*/
+
+/*.main {*/
+/*  width: 100%*/
+
+/*}*/
+
+/*.flex {*/
+/*  background-color: #00c7ec;*/
+/*  height: 100vh;*/
+/*  padding: 10px;*/
+/*  display: flex;*/
+/*  justify-content: flex-end;*/
+  /*flex-direction: column;*/
+  /*flex-wrap: no-wrap;*/
+  /*align-content: space-around;*/
+ 
+/*}*/
+
+/*.flex > div {*/
+  /*width: 300px;*/
+/*  background-color: #fff;*/
+/*  margin: 5px;*/
+/*  font-size: 100px;*/
+  /*flex-basis: 100px;*/
+  /*flex: 30%;*/
+/*}*/
+
+/*.flex > div:nth-child(1) {*/
+/*  margin-right: auto;*/
+  /*flex: 0 0;*/
+  /*order: 3;*/
+  /*flex-grow: 0;*/
+  /*flex-shrink: 0;*/
+/*}*/
+
+/*.flex > div:nth-child(2) {*/
+  /*flex: 20px;*/
+  /*align-self: flex-end;*/
+  /*order: 4;*/
+  /*flex-grow: 1;*/
+  /*flex-shrink: 1;*/
+/*}*/
+
+/*.flex > div:nth-child(3) {*/
+  /*flex: 10%;*/
+  /*order: 1;*/
+  /*flex-grow: 2;*/
+  /*flex-shrink: 2;*/
+/*}*/
+
+/*.flex > div:nth-child(4) {*/
+  /*flex: 3 3;*/
+  /*order: 2;*/
+  /*flex-grow: 3;*/
+  /*flex-shrink: 3;*/
+/*}*/
+
+/*演習問題*/
+header .flex {
+  padding: 30px 20px;
+  background-color: #ff00ff;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .flex > div {
+  height: 70px;
+  flex-basis: 140px;
+  margin: 0 10px;
+  background-color: #fbb3ff; 
+}
+
+header .flex > div:first-child {
+  margin-right: auto;
+}
+
+main {
+display: flex;
+justify-content: center;
+}
+
+main .sidebar {
+  width: 300px;
+  flex-grow: 0;
+  background-color: #d8ffb6;
+}
+
+
+main .blog .flex {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #00b522;
+}
+
+main .blog .flex > div {
+  height: 130px;
+  flex-basis: 200px;
+  margin: 10px;
+  background-color: #fff75a;
+}
+
+main .blog {
+  max-width: 700px;
+  flex-grow: 1;
+}
+
+
+footer .flex {
+  width: 100%;
+  padding: 20px;
+  background-color: #52a1ff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer .flex > div {
+  flex-basis: 45%;
+  max-width: 600px;
+  height: 40px;
+  margin: 10px;
+  background-color: #b6e7ff;
+}
